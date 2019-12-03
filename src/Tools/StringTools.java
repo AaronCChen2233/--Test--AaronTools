@@ -28,6 +28,15 @@ public class StringTools {
         return generatedString;
     }
 
+    /***
+     * get random string
+     * @param specifyWord
+     * @param useUpLetter
+     * @param useLoLetter
+     * @param useNumber
+     * @param length
+     * @return
+     */
     public static String GenerateARandomString(String specifyWord, boolean useUpLetter, boolean useLoLetter, boolean useNumber, int length) {
         String generateFrom = "";
         String generatePassword = "";
@@ -55,6 +64,11 @@ public class StringTools {
         return generatePassword;
     }
 
+    /***
+     * this function will shuffle string
+     * @param oString
+     * @return
+     */
     public static String ShuffleString(String oString) {
         String out = "";
         List<String> shuffleList = Arrays.asList(oString.split(""));
@@ -65,11 +79,21 @@ public class StringTools {
         return out;
     }
 
+    /***
+     * this function will check string is camel case
+     * @param checkedString
+     * @return
+     */
     public static boolean checkIsCamelCase(String checkedString){
         String camelCasePattern = "([a-z]+[A-Z]+\\w+)+";
         return checkedString.matches(camelCasePattern);
     }
 
+    /***
+     * this function will check string is studlyCaps
+     * @param checkedString
+     * @return
+     */
     public static boolean checkIsStudlyCaps(String checkedString){
         String camelCasePattern = "([A-Z]+[a-z]+[A-Z]+\\w+)+";
         return checkedString.matches(camelCasePattern);

@@ -7,6 +7,14 @@ import java.util.Scanner;
  */
 public class AskQuestion {
     static Scanner input = new Scanner(System.in);
+
+    /***
+     * ask yes no question
+     * @param askMessage
+     * @param trueString
+     * @param falseString
+     * @return
+     */
     public static boolean AskYesNoQuestion(String askMessage, String trueString, String falseString) {
         String answer;
         boolean yesOrNo = false;
@@ -23,6 +31,11 @@ public class AskQuestion {
         return yesOrNo;
     }
 
+    /***
+     * ask number question
+     * @param askMessage
+     * @return
+     */
     public static int AskNumberQuestion(String askMessage) {
         int answer;
         while (true) {
@@ -38,6 +51,11 @@ public class AskQuestion {
         return answer;
     }
 
+    /***
+     * ask string question
+     * @param askMessage
+     * @return
+     */
     public static String AskStringQuestion(String askMessage) {
         String answer;
         System.out.println(askMessage);

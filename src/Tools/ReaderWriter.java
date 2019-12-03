@@ -4,6 +4,9 @@ import java.io.*;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
+/***
+ * @author Aaron Chen
+ */
 public class ReaderWriter {
     /***
      * @param path
